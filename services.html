@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Catering Services & Packages — Anora Occasions</title>
+<meta name="description" content="Explore catering packages, menu builder, and headcount calculator for events in Kuala Lumpur.">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%232C2130'/><text x='50' y='66' font-size='52' text-anchor='middle' fill='%23D9B45B' font-family='Georgia'>A</text></svg>">
+</head>
+<body>
+<header class="site-header"><div class="wrap nav">
+<a class="brand" href="index.html"><span class="brand-mark">A</span><span><b>Anora Occasions</b><small>Catering · Kuala Lumpur</small></span></a>
+<nav class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+<div class="nav-cta"><a class="btn btn-ghost btn-sm" href="tel:+601121071055">Call us</a><a class="btn btn-dark btn-sm" href="contact.html">Plan your event</a><button class="burger" id="burger">☰</button></div>
+</div></header>
+
+<div class="hero"><div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1600&q=80')"></div>
+<div class="hero-inner"><span class="eyebrow" style="color:#E9C96A">Catering services</span>
+<h1>Easy catering in Kuala Lumpur</h1><p>Menu builder, honest packages, and portion-accurate planning — from intimate dinners to grand receptions.</p>
+<div class="hero-actions"><a class="btn btn-gold" href="#builder">Check your menu</a><a class="btn btn-light" href="#packages">View packages</a></div></div></div>
+
+<section><div class="wrap">
+<div class="grid-4">
+<div class="step reveal"><div class="n">◈</div><h3>Build your menu</h3><p class="muted">Pick dishes online at your pace. No phone tag, no pressure.</p></div>
+<div class="step reveal"><div class="n">❖</div><h3>Full event packages</h3><p class="muted">Setup, food, and service bundled into one simple plan.</p></div>
+<div class="step reveal"><div class="n">▣</div><h3>Know your portions</h3><p class="muted">Enter guests, get accurate estimates. No guessing, no waste.</p></div>
+<div class="step reveal"><div class="n">✦</div><h3>Dishes that travel well</h3><p class="muted">Curated to stay fresh from kitchen to table.</p></div>
+</div></div></section>
+
+<section id="packages" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+<span class="eyebrow">Our packages</span><h2>Catering packages built around your guest count</h2>
+<p class="lead">Pick a size, tweak the menu, we handle the rest. Simple pricing, no surprises.</p>
+<div class="pricing" style="margin-top:1.4rem">
+<div class="price-card reveal"><h3>Casual Gathering</h3><div class="price">RM 35 <small>/ guest</small></div><p class="muted">Birthdays, brunches, 10–30 guests.</p>
+<ul class="check"><li>Choice of 3 mains</li><li>Side dishes</li><li>Basic table setup</li><li>Delivery in KL</li></ul><a class="btn btn-ghost" href="contact.html?package=Casual%20Gathering">Get a quote</a></div>
+<div class="price-card featured reveal"><span class="badge-pop">MOST POPULAR</span><h3>Celebration</h3><div class="price">RM 55 <small>/ guest</small></div><p class="muted">Weddings, engagements, 30–100 guests.</p>
+<ul class="check"><li>Choice of 5 mains</li><li>Dessert station</li><li>Full table setup</li><li>On-site service staff</li><li>Menu tasting session</li><li>Delivery in KL</li></ul><a class="btn btn-dark" href="contact.html?package=Celebration">Get a quote</a></div>
+<div class="price-card reveal"><h3>Grand Affair</h3><div class="price">Custom <small>quote</small></div><p class="muted">100+ guests, fully tailored menu &amp; setup.</p>
+<ul class="check"><li>Fully custom menu</li><li>Premium table styling</li><li>Dedicated coordinator</li><li>Setup + cleanup</li><li>Multiple tastings</li></ul><a class="btn btn-ghost" href="contact.html?package=Grand%20Affair">Request custom quote</a></div>
+</div></div></section>
+
+<section id="builder"><div class="wrap">
+<span class="eyebrow">Menu builder</span><h2>Build it — watch the price update</h2>
+<div class="builder" data-builder>
+<div class="card card-pad">
+<div class="form-row"><div class="field"><label>Package</label><select data-pkg><option value="casual">Casual Gathering — RM 35</option><option value="celebration" selected>Celebration — RM 55</option><option value="grand">Grand Affair — RM 75 base</option></select></div>
+<div class="field"><label>Guests</label><input data-guests type="number" min="10" max="500" value="80"></div></div>
+<div class="cat-tabs"><button type="button" data-cat="mains" class="on">Mains</button><button type="button" data-cat="sides">Sides</button><button type="button" data-cat="desserts">Desserts &amp; drinks</button><button type="button" data-cat="staffing">Service</button></div>
+<div data-dish-list></div></div>
+<div class="summary"><span class="eyebrow" style="color:#E9C96A">Estimate · <span data-pkg-name>Celebration</span></span>
+<div class="big-total" data-total>RM 0</div><p><output data-tables></output></p>
+<p>Per guest: <b data-per-guest></b><br>Per table: <b data-per-table></b></p>
+<a class="btn btn-gold" data-quote href="contact.html">Get this quote →</a></div>
+</div></div></section>
+
+<section style="background:var(--cream-2);border-top:1px solid var(--line)"><div class="wrap split">
+<div><span class="eyebrow">Headcount calculator</span><h2>Know your portions before you order</h2>
+<p class="lead">Slide your guest count — we estimate rice, proteins, kuih, drinks, tables, and crew.</p>
+<div class="card card-pad" data-portions style="margin-top:1rem">
+<div class="field"><label>Number of guests</label><input data-p-guests type="number" min="10" max="500" value="80"></div>
+<div class="grid-2">
+<div class="stat"><b data-p-rice></b><span class="muted">Steamed rice</span></div>
+<div class="stat"><b data-p-chicken></b><span class="muted">Protein portions</span></div>
+<div class="stat"><b data-p-kuih></b><span class="muted">Kuih / desserts</span></div>
+<div class="stat"><b data-p-drinks></b><span class="muted">Drinks</span></div>
+<div class="stat"><b data-p-tables></b><span class="muted">Tables (10 pax)</span></div>
+<div class="stat"><b data-p-staff></b><span class="muted">Service crew</span></div>
+</div></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1000&q=80" alt="Fresh catering bowl" style="height:260px;width:100%;object-fit:cover">
+<div class="card-pad"><h3>Dietary needs? Covered.</h3>
+<div class="faq open"><button>Can you adjust for dietary needs? <span>+</span></button><div class="a"><p>Yes — vegetarian, vegan, and allergen-aware dishes, kept separate and labelled on the day.</p></div></div>
+<div class="faq"><button>Will a customized menu cost more? <span>+</span></button><div class="a"><p>Small swaps are free. Premium stations (live grill, dessert bar) add a clear per-guest fee shown in the builder.</p></div></div>
+<div class="faq"><button>Do you label dishes? <span>+</span></button><div class="a"><p>Always — every allergen-free and vegetarian dish is labelled at the buffet.</p></div></div>
+</div></div></div></section>
+
+<section><div class="wrap">
+<div class="stats">
+<div class="stat reveal"><b>50+</b><span class="muted">Guests per event, intimate to grand</span></div>
+<div class="stat reveal"><b>100%</b><span class="muted">Custom menu approval before cooking</span></div>
+<div class="stat reveal"><b>4.9★</b><span class="muted">Average satisfaction rating</span></div>
+<div class="stat reveal"><b>40+</b><span class="muted">Dishes on rotation</span></div>
+</div>
+<div class="cta-band" style="margin-top:1.6rem"><div><h2>Tell us your headcount, we'll handle the rest</h2>
+<p>Share your event details and get a clear quote before any work starts.</p>
+<div style="display:flex;gap:.6rem;flex-wrap:wrap"><a class="btn btn-gold" href="contact.html">Request a quote</a><a class="btn btn-light" href="mailto:abdullahalowasi369@gmail.com">Email us</a></div></div>
+<img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=900&q=80" alt="Event setup"></div>
+</div></section>
+
+<footer><div class="wrap foot">
+<div><b>Anora Occasions</b><p style="color:#CBBFA6;font-size:.92rem">Catering &amp; event services · Kuala Lumpur</p></div>
+<div><b>Explore</b><br><a href="index.html">Home</a><br><a href="gallery.html">Gallery</a><br><a href="about.html">About</a><br><a href="contact.html">Contact</a></div>
+<div><b>Contact</b><br><a href="tel:+601121071055">+60 11-2107 1055</a><br><a href="mailto:abdullahalowasi369@gmail.com">abdullahalowasi369@gmail.com</a></div>
+<div><b>Hours</b><br><span style="color:#CBBFA6">Mon–Sat · 9am–7pm</span></div>
+</div><div class="wrap foot-bottom"><span>© <span data-year></span> Anora Occasions</span><span><a href="index.html">Home</a> · <a href="contact.html">Book</a></span></div></footer>
+<script src="assets/js/main.js"></script>
+</body></html>
